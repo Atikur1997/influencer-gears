@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* different fonts are here */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* shared section starts here */
+:root {
+    --btnColor: #E02C6D;
+
+}
+
+.btn-primary {
+    padding: calc(10rem / 16) calc(26rem / 16);
+    background-color: var(--btnColor);
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: calc(41rem /16);
+}
+
+/* nav section starts here */
+nav {
+    margin: calc(87rem / 16) calc(120rem / 16);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-right: calc(30rem / 16);
+    font-size: calc(16rem / 16);
+    cursor: pointer;
+}
+
+.logo {
+    font-size: calc(24rem / 16);
+}
+
+/* banner section starts here */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-box {
+    width: calc(580rem / 16);
+    height: calc(300rem / 16);
+    margin: calc(50rem / 16) calc(130rem / 16);
+}
+
+.banner-title {
+    font-size: calc(52rem / 16);
+    width: calc(580rem / 16);
+    margin: 0;
+}
+
+.banner-description {
+    color: #3A3A3A;
+    width: calc(580rem / 16);
+    margin: calc(16rem / 16) 0;
+
+}
+
+.banner-image {
+    background-image: url("images/Circle\ design.svg");
+    background-position: center;
+}
