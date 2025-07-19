@@ -127,7 +127,27 @@ nav {
     margin-right: calc(130rem / 16);
 }
 
-@media screen and (max-width:982px) {
+main {
+    margin: calc(100rem / 16) calc(130rem / 16);
+}
+
+.sponsor {
+    border: 1px solid lightgray;
+}
+
+.sponsor-images {
+    justify-content: space-between;
+    max-width: calc(1110rem / 16);
+    padding: calc(36rem / 16) calc(62rem / 16);
+}
+
+/* card area starts here */
+
+
+
+
+/* responsive design starts here */
+@media screen and (max-width:1000px) {
 
     nav {
         flex-direction: column;
@@ -152,9 +172,29 @@ nav {
         justify-content: space-between;
     }
 
+    main {
+        margin: 0 calc(130rem / 16);
+    }
+
+    .sponsor {
+        border: none;
+        display: flex;
+        margin: 50px 0px;
+
+
+    }
+
+    .sponsor-images {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
 
 
 }
+
+
+
 
 @media screen and (min-width:519px) and (max-width:745px) {
 
@@ -192,26 +232,59 @@ nav {
     }
 
     .banner-box {
-        width: calc(500rem / 16);
+        width: 100%;
+    }
+
+    .sponsor-images {
+        flex-wrap: wrap;
+
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .sponsor {
+        border: none;
+        display: flex;
+        margin: 50px 0px;
+
+
+    }
+
+    .sponsor-images {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 
 @media screen and (max-width: 518.99px) {
+    body {
+        width: 97%;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
     .banner {
 
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: 90%;
+
     }
+
+
 
     .banner-image {
         margin: 10px auto;
     }
 
     .banner-image img {
-        width: 100%;
+        width: 90%;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -226,14 +299,30 @@ nav {
     .banner-title {
         font-size: calc(32rem / 16);
 
+
     }
 
     .banner-box {
-        width: calc(500rem / 16);
+        width: 100%;
     }
 
     .banner-description {
         width: 80%;
         margin: 16px auto;
+    }
+
+    .sponsor {
+        border: none;
+        display: flex;
+        margin-top: 0;
+        width: 100%;
+
+
+    }
+
+    .sponsor-images {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
     }
 }
