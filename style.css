@@ -169,6 +169,17 @@ main {
     gap: 30px;
 }
 
+.seeMore {
+    grid-column: span 3;
+    width: 100%;
+    justify-content: flex-end;
+    color: #E02C6D;
+
+}
+
+.seeMore i {
+    margin-right: 10px;
+}
 
 
 /* responsive design starts here */
@@ -288,6 +299,11 @@ main {
         justify-content: center;
     }
 
+    .seeMore {
+        grid-column: span 1;
+        justify-content: center;
+    }
+
     .card-item {
         margin: 10px 0;
         gap: 0;
@@ -373,4 +389,10 @@ main {
         margin: 10px 0;
         gap: 0;
     }
+
+    .seeMore {
+        grid-column: span 1;
+        justify-content: center;
+    }
+
 }
