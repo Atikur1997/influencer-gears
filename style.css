@@ -55,6 +55,12 @@
     font-style: normal;
 }
 
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
 
 
 /* shared section starts here */
@@ -163,6 +169,23 @@ main {
     width: 100%;
 }
 
+.card-title {
+    margin: 0px;
+}
+
+.price {
+    margin-bottom: 0px;
+}
+
+.star-item,
+.num-rating {
+    margin-top: 0;
+}
+
+.product-description {
+    font-size: 14px;
+}
+
 .rating {
     display: flex;
     align-items: center;
@@ -181,6 +204,22 @@ main {
     margin-right: 10px;
 }
 
+.features {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-product {
+    width: 40%;
+}
+
+.feature-title {
+    font-size: calc(38rem / 16);
+}
+
+.feature-product p {
+    margin-bottom: calc(50rem / 16);
+}
 
 /* responsive design starts here */
 @media screen and (max-width:1000px) {
@@ -225,6 +264,26 @@ main {
         gap: 20px;
     }
 
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .seeMore {
+        grid-column: span 1;
+        justify-content: center;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        gap: calc(40rem / 16);
+    }
+
+    .feature-product {
+        width: 70%;
+        text-align: center;
+    }
 
 
 }
@@ -308,6 +367,17 @@ main {
         margin: 10px 0;
         gap: 0;
     }
+
+    .features {
+        flex-direction: column-reverse;
+        gap: calc(40rem / 16);
+    }
+
+    .feature-product {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 518.99px) {
@@ -316,7 +386,8 @@ main {
     }
 
     main {
-        margin-top: 0;
+        margin: 0;
+
     }
 
     .banner {
@@ -393,6 +464,17 @@ main {
     .seeMore {
         grid-column: span 1;
         justify-content: center;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        gap: calc(40rem / 16);
+    }
+
+    .feature-product {
+        width: 100%;
+        text-align: center;
+
     }
 
 }
